@@ -3,6 +3,14 @@ let navbar = document.querySelector(".navbar");
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
+var typed = new Typed(".text", {
+  strings: ["FullStack Engineer", "Frontend Designer", "BackEnd Development"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true,
+});
+
 window.onscroll = () => {
   sections.forEach((sec) => {
     let top = window.scrollY;
