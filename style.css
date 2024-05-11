@@ -114,7 +114,7 @@ span{
     max-width: 600px;
 }
 .home-content p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
@@ -126,6 +126,7 @@ span{
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
+    height: 100px;
 }
 .home-content h3 span {
     color: var(--main-color);
