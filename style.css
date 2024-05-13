@@ -360,7 +360,7 @@ span{
 .layer h5:hover{
     color: bisque;
     transition: transform 1s;
-    transform: scale(1.5)
+    transform: scale(1.25)
 }
 .row:hover .layer {
     height: 100%;
