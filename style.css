@@ -284,10 +284,12 @@ span{
     padding-bottom: 110px;
 }
 .proj-container{
+    height: 300px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px,auto));
     align-items: center;
     justify-content: space-around;
+    padding-bottom: 20px;
 }
 .row{
     position: relative;
@@ -297,9 +299,8 @@ span{
     overflow: hidden;
 }
 .row img{
-    width: 100%;
     max-width: 300px;
-    max-height: 300px;
+    height: 200px;
     border-radius: 15px;
     display: block;
     transition: transform 0.5s;
@@ -334,14 +335,16 @@ span{
 }
 .layer p {
     color: black;
+    margin-bottom: -10px;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1;
-    text-align: justify;
+    text-align: center;
 }
 .layer i {
     font-size: 30px;
     color: black;
+    margin-top: 20px;
     width: 50px;
     height: 50px;
     display: flex;
@@ -584,5 +587,30 @@ span{
     }
     .services-container{
         grid-template-columns: repeat(1,1fr);
+    }
+    /* projects */
+    .proj-container{
+        flex-direction: column;
+        gap: 70px;
+    }
+    .main-text {
+        padding-top: 20px;
+        margin-top: 10px;
+        padding-bottom: 50px;
+    }
+    .main-text h2 {
+        font-size: 40px;
+        padding-bottom: 15px;
+    }
+    .row img{
+        height: 150px;
+        width: 300px;
+    }
+    .layer p {
+        line-height: normal;
+        margin-bottom: -30px;
+    }
+    .layer a{
+        margin-top: 15px;
     }
 }
