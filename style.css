@@ -352,18 +352,12 @@ span{
     justify-content: center;
     border-radius: 50%;
 }
-.layer h5 a:hover{
-    font-style: var(--text-color);
-    text-decoration: underline black;
-    color: rgb(247, 3, 3);
+.layer h5:hover,
+.layer i:hover{
+    color: red;
+    text-decoration: none;
     transition: transform 1s;
-    transform: scale(1.5)
-}
-.layer i:hover,
-.layer h5:hover{
-    color: bisque;
-    transition: transform 1s;
-    transform: scale(1.25)
+    transform: scale(1.2)
 }
 .row:hover .layer {
     height: 100%;
