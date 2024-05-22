@@ -306,7 +306,7 @@ span{
     transition: transform 0.5s;
     padding: 10px;
 }
-.layer{
+.row .layer{
     width: 100%;
     max-width: 300px;
     max-height: 300px;
@@ -324,24 +324,28 @@ span{
     justify-content: center;
     text-align: center;
     padding: 40px 40px;
-    transition: height 0.5s;
+    transition: height 0.5s ;
+    z-index: 1;
 }
-.layer h5 {
+.row .layer h5 {
     color: #000;
     font-size: 20px;
+    font-weight: 700;
     padding-top: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    z-index: 2;
 }
-.layer p {
+.row .layer p {
     color: black;
     margin-bottom: -10px;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1;
     text-align: center;
+    z-index: 2;
 }
-.layer i {
+.row .layer i {
     font-size: 30px;
     color: black;
     margin-top: 20px;
@@ -351,11 +355,10 @@ span{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    z-index: 2;
 }
-.layer h5:hover,
-.layer i:hover{
-    color: red;
-    text-decoration: none;
+.row .layer i:hover{
+    color: brown;
     transition: transform 1s;
     transform: scale(1.2)
 }
@@ -596,7 +599,8 @@ span{
     /* projects */
     .proj-container{
         flex-direction: column;
-        gap: 70px;
+        gap: 200px;
+        margin-top: 10px;
     }
     .main-text {
         padding-top: 20px;
@@ -605,10 +609,11 @@ span{
     }
     .main-text h2 {
         font-size: 40px;
-        padding-bottom: 15px;
+        padding-bottom: 50px;
     }
+    
     .row img{
-        height: 150px;
+        height: 170px;
         width: 300px;
     }
     .layer p {
