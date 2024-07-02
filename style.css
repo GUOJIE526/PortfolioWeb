@@ -286,10 +286,10 @@ span{
 .proj-container{
     height: 300px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(100px,auto));
     align-items: center;
     justify-content: space-around;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 .row{
     position: relative;
