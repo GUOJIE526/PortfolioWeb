@@ -542,7 +542,7 @@ span{
         left: 0;
     }
     .services{
-        padding-bottom: 7rem;
+        padding-bottom: 5rem;
     }
 }
 @media(max-width:895px){
@@ -597,8 +597,10 @@ span{
     }
     /* projects */
     .proj-container{
-        flex-direction: column;
-        gap: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        gap: 5px;
         margin-top: 10px;
     }
     .main-text {
@@ -612,8 +614,8 @@ span{
     }
     
     .row img{
-        height: 170px;
-        width: 300px;
+        height: 120px;
+        width: 230px;
     }
     .layer p {
         line-height: normal;
@@ -622,4 +624,5 @@ span{
     .layer a{
         margin-top: 15px;
     }
+    
 }
