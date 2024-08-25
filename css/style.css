@@ -1,0 +1,66 @@
+:root{
+    --main-color: red;
+}
+body{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.navbar-nav a{
+    transition: 0.5s ease;
+}
+.navbar-nav a:hover{
+    color: var(--main-color) !important;
+    text-decoration: underline;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo span{
+    text-shadow: 0 0 25px var(--main-color);
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 11% 10rem;
+}
+.home-img img{
+    width: 25vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.home-img img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
+}
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.social-icons a:hover{
+    transform: scale(1.3) translateY(-5px);
+}
+.timeline{
+    transition: 0.3s ease-in-out;
+}
+.timeline:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--main-color);
+}
+#education{
+    background-color: rgb(202, 200, 200);
+}
+.projects a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+.projects a:hover{
+    transform: scale(1.3) translateY(-5px);
+}
