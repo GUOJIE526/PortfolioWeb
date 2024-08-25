@@ -12,6 +12,7 @@ body{
 }
 .navbar-nav a:hover{
     color: var(--main-color) !important;
+    font-weight: bold;
     text-decoration: underline;
 }
 .logo:hover{
