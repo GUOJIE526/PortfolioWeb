@@ -67,7 +67,7 @@ section{
 }
 .serv-row{
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 .serv{
     width: 150px;
