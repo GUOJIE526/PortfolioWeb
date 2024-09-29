@@ -1,3 +1,5 @@
+new WOW().init();
+
 var typed = new Typed(".text", {
   strings: ["FullStack Engineer", "Frontend Designer", "BackEnd Development"],
   typeSpeed: 100,
