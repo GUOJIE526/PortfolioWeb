@@ -111,18 +111,19 @@ section{
 #education{
     background-color: rgb(202, 200, 200);
 }
-.projects a{
+.project-card a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    transition: 0.5s ease-in-out;
 }
-.projects a:hover{
+.project-card a:hover{
     transform: scale(1.3) translateY(-5px);
+    transition: 0.5s ease-in-out;
+
 }
-#projects img:hover{
+/* #projects img:hover{
     box-shadow: 0px 0px 20px var(--main-color);
-}
+} */
 .serv-row{
     display: flex;
     justify-content: center; 
@@ -161,4 +162,117 @@ h5{
     .arrow{
         display: none;
     }
+}
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0 10%;
+    background: linear-gradient(to right, #1D3557, #E63946);
+    color: white;
+}
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.hero-text p {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+.hero-text a {
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hero-text a:first-child {
+    background: #FFD700;
+    color: #1D3557;
+}
+.hero-text a:first-child:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.hero-text a:last-child {
+    border: 2px solid #FFD700;
+    color: #FFD700;
+}
+.hero-text a:last-child:hover {
+    background: #FFD700;
+    color: #1D3557;
+}
+.hero-image img {
+    border-radius: 20px;
+    width: 45%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+.projects-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1D3557;
+}
+.project-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.project-card h3 {
+    color: #E63946;
+}
+/* .project-card a {
+    text-decoration: none;
+    color: #1D3557;
+    transition: color 0.3s ease;
+}
+.project-card a:hover {
+    color: #E63946;
+} */
+
+.project-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.project-card h3 {
+    color: #E63946;
+}
+.project-card a.github-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+    color: #1D3557;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.project-card a.github-icon:hover {
+    color: #E63946;
 }
