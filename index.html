@@ -72,8 +72,8 @@
       <!-- 首頁 -->
       <section id="home">
         <div class="container mt-3">
-          <div class="row">
-            <div class="col-12 col-md-6">
+          <div class="row align-items-center home-row">
+            <div class="col-12 col-md-6 order-2 order-md-1 home-content">
               <h1 class="text-secondary">
                 Hello, It's <span class="text-danger">GuoJie</span>
               </h1>
@@ -121,12 +121,12 @@
             </div>
             <div
               id="myPhoto"
-              class="wow animate__animated animate__jello home-img col-12 col-md-6 ps-5"
+              class="wow animate__animated animate__jello home-img col-12 col-md-6 order-1 order-md-2"
             >
               <img
                 src="./assets/PortfplioImg.jpg"
-                alt=""
-                class="img-fluid m-5"
+                alt="Portrait of GuoJie"
+                class="img-fluid"
               />
             </div>
           </div>
@@ -222,42 +222,18 @@
       </section>
       <!-- 專案 -->
       <section id="projects">
-        <div
-          class="projects-container"
-          style="padding: 5% 10%; background-color: #f9f9f9"
-        >
-          <h2
-            style="
-              text-align: center;
-              font-size: 2.5rem;
-              margin-bottom: 2rem;
-              color: #1d3557;
-            "
-          >
-            My <span style="color: #e63946">Projects</span>
+        <div class="projects-container">
+          <h2 class="section-title text-center">
+            My <span>Projects</span>
           </h2>
-          <div
-            style="
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-              gap: 20px;
-            "
-          >
-            <div
-              class="project-card wow animate__animated animate__fadeInDown"
-              style="
-                background: white;
-                border-radius: 10px;
-                padding: 20px;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-              "
-            >
+          <div class="projects-grid">
+            <div class="project-card wow animate__animated animate__fadeInDown">
               <img
                 alt="Project"
                 src="./assets/NuxtFronted.png"
-                style="width: 100%; border-radius: 10px; margin-bottom: 15px"
+                class="project-image"
               />
-              <h3 style="color: #e63946">書法藝術家線上展覽</h3>
+              <h3>書法藝術家線上展覽</h3>
               <span>[獨立接案]</span>
               <p>
                 以 Nuxt.js 框架開發的響應式個人作品網站，展示書法藝術家的創作。
@@ -266,27 +242,18 @@
               </p>
               <a
                 href="https://www.ruoliwrite.com/"
-                style="text-decoration: none; color: #1d3557"
                 target="_blank"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
 
-            <div
-              class="project-card wow animate__animated animate__bounceInLeft"
-              style="
-                background: white;
-                border-radius: 10px;
-                padding: 20px;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-              "
-            >
+            <div class="project-card wow animate__animated animate__bounceInLeft">
               <img
                 alt="Project"
                 src="./assets/Write.png"
-                style="width: 100%; border-radius: 10px; margin-bottom: 15px"
+                class="project-image"
               />
-              <h3 style="color: #e63946">書法展覽後台管理系統</h3>
+              <h3>書法展覽後台管理系統</h3>
               <span>[獨立接案]</span>
               <p>
                 本專案以 ASP.NET Core MVC
@@ -295,27 +262,18 @@
               </p>
               <a
                 href="https://www.ruolibackend.com/"
-                style="text-decoration: none; color: #1d3557"
                 target="_blank"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
 
-            <div
-              class="project-card wow animate__animated animate__bounceInDown"
-              style="
-                background: white;
-                border-radius: 10px;
-                padding: 20px;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-              "
-            >
+            <div class="project-card wow animate__animated animate__bounceInDown">
               <img
                 alt="Project"
                 src="./assets/mygoparking.png"
-                style="width: 100%; border-radius: 10px; margin-bottom: 15px"
+                class="project-image"
               />
-              <h3 style="color: #e63946">MyGoParking</h3>
+              <h3>MyGoParking</h3>
               <p>
                 停車場搜尋Web服務, 三層式架構, 前端以Vue為框架, 後端.Net Core
                 Web Api, 資料庫SQL Server. 提供預約車位服務,
@@ -323,98 +281,70 @@
               </p>
               <a
                 href="#"
-                style="text-decoration: none; color: #1d3557"
                 target="_blank"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
 
-            <div
-              class="project-card wow animate__animated animate__backInDown"
-              style="
-                background: white;
-                border-radius: 10px;
-                padding: 20px;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-              "
-            >
+            <div class="project-card wow animate__animated animate__backInDown">
               <img
                 alt="Project"
                 src="./assets/parklot.png"
-                style="width: 100%; border-radius: 10px; margin-bottom: 15px"
+                class="project-image"
               />
-              <h3 style="color: #e63946">停車場管理系統</h3>
+              <h3>停車場管理系統</h3>
               <p>
                 此專案是針對停車場後台管理的系統,
                 提供了即時查詢、資料編輯、刪除和新增等功能.
               </p>
               <a
                 href="https://github.com/GUOJIE526/MyGoParkingManagement"
-                style="text-decoration: none; color: #1d3557"
                 target="_blank"
                 ><i class="bi bi-github"></i
               ></a>
             </div>
-            <div
-              class="project-card wow animate__animated animate__fadeInRightBig"
-              style="
-                background: white;
-                border-radius: 10px;
-                padding: 20px;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-              "
-            >
+            <div class="project-card wow animate__animated animate__fadeInRightBig">
               <img
                 alt="Project"
                 src="./assets/PharmacyShop.png"
-                style="width: 100%; border-radius: 10px; margin-bottom: 15px"
+                class="project-image"
               />
-              <h3 style="color: #e63946">線上藥局</h3>
+              <h3>線上藥局</h3>
               <p>
                 運用C# ADO.Net WinForm及MS SQL製作的線上藥局商城,
                 具備了會員管理、商品管理、員工管理、訂單管理和系統管理.
               </p>
               <a
                 href="https://github.com/GUOJIE526/PharmacyShop2.0"
-                style="text-decoration: none; color: #1d3557"
                 target="_blank"
                 ><i class="bi bi-github"></i
               ></a>
             </div>
 
-            <div
-              class="project-card wow animate__animated animate__zoomInUp"
-              style="
-                background: white;
-                border-radius: 10px;
-                padding: 20px;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-              "
-            >
+            <div class="project-card wow animate__animated animate__zoomInUp">
               <img
                 alt="Project"
                 src="./assets/cat-search.jpg"
-                style="width: 100%; border-radius: 10px; margin-bottom: 15px"
+                class="project-image"
               />
-              <h3 style="color: #e63946">搜索喵喵</h3>
+              <h3>搜索喵喵</h3>
               <p>
                 Cat Search 是一個用於搜索貓咪品種並顯示其詳細信息的Web
                 APP。用戶可以選擇不同的貓咪品種並查看其詳細資料
                 ，包括圖片、品種名稱、原產地、壽命、體重、性格等。
               </p>
-              <a
-                href="https://github.com/GUOJIE526/Cat-Search"
-                style="text-decoration: none; color: #1d3557"
-                target="_blank"
-                class="me-2"
-                ><i class="bi bi-github"></i
-              ></a>
-              <a
-                href="https://guojie526.github.io/Cat-Search/"
-                style="text-decoration: none; color: #1d3557"
-                target="_blank"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+              <div class="project-links">
+                <a
+                  href="https://github.com/GUOJIE526/Cat-Search"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+                <a
+                  href="https://guojie526.github.io/Cat-Search/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
