@@ -60,7 +60,14 @@ section {
 }
 
 #home {
-    padding-top: 7rem;
+    padding: 7rem 0 3rem;
+    min-height: calc(100vh - 5rem);
+    display: flex;
+    align-items: center;
+}
+
+#home > .container {
+    width: 100%;
 }
 
 .home-row {
@@ -262,7 +269,6 @@ section {
     margin-top: 0.25rem;
 }
 
-
 .project-links a {
     display: inline-flex;
     align-items: center;
@@ -310,7 +316,9 @@ h5 {
     }
 
     #home {
-        padding-top: 6.5rem;
+        padding: 6.5rem 0 2.5rem;
+        min-height: auto;
+        display: block;
     }
 
     .home-content {
