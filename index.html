@@ -248,7 +248,6 @@
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
-
             <div class="project-card wow animate__animated animate__bounceInLeft">
               <img
                 alt="Project"
@@ -268,7 +267,6 @@
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
-
             <div class="project-card wow animate__animated animate__bounceInDown">
               <img
                 alt="Project"
@@ -507,7 +505,9 @@
     <footer>
       <div class="container-fluid bg-secondary">
         <div class="row text-center text-white">
-          <div class="col-12">Developed by GuoJie &copy; 2024</div>
+          <div class="col-12">
+            Developed by GuoJie &copy; <span class="dateTime"></span>
+          </div>
         </div>
       </div>
     </footer>
@@ -533,6 +533,10 @@
         backDelay: 1000,
         loop: true,
       });
+
+      //footer year
+      const year = new Date().getFullYear();
+      document.querySelector(".dateTime").textContent = year;
     </script>
   </body>
 </html>
